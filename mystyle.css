@@ -1,5 +1,9 @@
 body {
     background-color: lightgrey; /* add back ground color*/
+    padding-top: 1.5cm;
+    padding-bottom: 1.5cm;
+    padding-left: 1.5cm;
+    padding-right: 1.5cm;
 }
 
 p {
