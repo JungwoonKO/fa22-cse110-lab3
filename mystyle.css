@@ -1,7 +1,10 @@
 body {
     background-color: lightgrey; /* add back ground color*/
-    margin-top: 2cm;
-    margin-bottom: 2cm;
-    margin-right: 1in;
-    margin-left: 1in;
+}
+
+p {
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-right: 1pc;
+    margin-left: 1pc;
 }
