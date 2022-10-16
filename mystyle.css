@@ -6,6 +6,16 @@ body {
     padding-right: 1.5cm;
 }
 
+header {
+    background-color: #000000;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    color: rgb(255,255,255);
+    text-decoration: underline hsl(100,100%,100%);
+    text-align: center;
+}
 p {
     margin-top: 1cm;
     margin-bottom: 1cm;
