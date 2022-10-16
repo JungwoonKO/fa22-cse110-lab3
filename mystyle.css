@@ -45,6 +45,10 @@ nav:hover {
     background-color: yellow;
     width: 180px;
 }
+
+a:active {
+    background-color: yellow;
+}
 p.no_display {display: none;}
 p.block_inline {display: inline-block;}
 
