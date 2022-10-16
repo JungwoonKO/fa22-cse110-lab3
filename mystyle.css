@@ -43,6 +43,7 @@ nav {
 
 nav:hover {
     background-color: yellow;
+    width: 180px;
 }
 p.no_display {display: none;}
 p.block_inline {display: inline-block;}
