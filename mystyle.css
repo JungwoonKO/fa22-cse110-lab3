@@ -4,6 +4,7 @@ body {
     padding-bottom: 1.5cm;
     padding-left: 1.5cm;
     padding-right: 1.5cm;
+    font-family: 
 }
 
 header {
@@ -44,11 +45,14 @@ nav {
 
 nav:hover {
     background-color: yellow;
-    width: 180px;
+    width: 11rem;
 }
 
 a:active {
     background-color: yellow;
+}
+a[target] {
+    background-color: red;
 }
 p.no_display {display: none;}
 p.block_inline {display: inline-block;}
@@ -113,3 +117,61 @@ p.block_inline {display: inline-block;}
     }
 }
 
+@font-face {
+    font-family: latos;
+    src: url(Lato/Lato-Regular.ttf);
+}
+
+/*Universal Selector*/
+* {
+    font-family: latos;
+}
+
+/*ID selector*/
+#highlight {
+    background-color: yellow;
+    max-width:500px;
+}
+
+/*Selector list*/
+h1, h2, h3 {
+    color: beige;
+    background-color: darkgray;
+    border: 2px solid black;
+    padding: 5px;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/*Descendant Combinator*/
+ul li{
+    background-color: azure;
+    max-width: 140px;
+}
+
+/*Child Combinator*/
+details > p {
+    background-color: seashell;
+}
+
+/*Adjacent sibling selector*/
+div + main {
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+/*General Sibling Selector*/
+div ~ p{
+    background-color: white;
+}
+
+/*Combining Two Selectors*/
+.make.red {
+    background-color: red;
+    max-width: 200px;
+}
