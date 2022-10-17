@@ -23,6 +23,7 @@ p {
     margin-left: 1pc;
 }
 
+/*this is for attendance list*/
 .mystyle2 {
     border: 5px solid black;
     border-radius: 10px;
@@ -51,4 +52,64 @@ a:active {
 }
 p.no_display {display: none;}
 p.block_inline {display: inline-block;}
+
+.flex_container {
+    display: flex;
+
+    /*define flow direction*/
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+
+.flex_item {
+    background: white;
+    font-size: 18px;
+    padding: 1em;
+    flex-grow: 2vw;
+}
+
+.flex_item2 {
+    background: white;
+    font-size: 18px;
+    padding: 1em;
+    flex-grow: 2vw;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: darkgrey;
+    padding: 10px;
+    gap: 10px;
+    grid-template-areas:
+        "header header header header"
+        "main main mian sidebar"
+        "footer footer footer footer";
+}
+
+.grid-item {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 18px;
+    text-align: right;
+    grid-area: header;
+}
+
+.grid-item2 {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 18px;
+    text-align: right;
+    grid-area: sidebar;
+}
+
+/*change background color depends on max-widht of screen*/
+@media screen and (max-width: 600px) {
+    body {
+        background-color: white;
+    }
+}
 
